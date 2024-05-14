@@ -5,7 +5,7 @@ def my_loss(classifier, regression, points, mode):
     #regression is an array of predicted coordinates
     #points is an array of ground truth coordinates
     #mode is the ground truth class
-    alpha = 0.5
+    alpha = 0.50
     MSE = nn.MSELoss()
     MSEl = MSE(regression, points)
     cross_entropy = nn.CrossEntropyLoss()
